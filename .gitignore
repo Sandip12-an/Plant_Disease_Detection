@@ -1,0 +1,75 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.venv
+venv/
+ENV/
+*.sqlite3
+*.db
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+frontend/dist/
+frontend/.vite/
+
+# ML Data & Checkpoints
+data/raw/*
+!data/raw/README.md
+data/processed/*
+!data/processed/README.md
+*.h5
+*.pth
+*.pt
+*.ckpt
+ml/checkpoints/
+ml/runs/
+
+# ML Model binaries (large files - tracked via Git LFS or excluded)
+ml/model_registry/*.onnx
+ml/model_registry/*.tflite
+# Keep metadata files
+!ml/model_registry/class_labels.json
+!ml/model_registry/metrics.json
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment and Secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+uploads/

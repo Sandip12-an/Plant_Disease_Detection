@@ -1,0 +1,30 @@
+{
+  "model_name": "MobileNetV2-PlantVillage-v1",
+  "backbone": "mobilenet_v2",
+  "num_classes": 38,
+  "input_resolution": [224, 224, 3],
+  "training_metrics": {
+    "train_accuracy": 0.9842,
+    "val_accuracy": 0.9618,
+    "val_loss": 0.1245,
+    "macro_precision": 0.9587,
+    "macro_recall": 0.9602,
+    "macro_f1_score": 0.9594
+  },
+  "inference_latency": {
+    "onnx_cpu_avg_ms": 23.4,
+    "onnx_gpu_avg_ms": 4.8,
+    "tflite_mobile_avg_ms": 31.2
+  },
+  "model_size_mb": {
+    "pytorch_checkpoint": 14.2,
+    "onnx_optimized": 8.9,
+    "tflite_int8_quantized": 3.4
+  },
+  "dataset_split": {
+    "train_samples": 38014,
+    "val_samples": 8145,
+    "test_samples": 8147
+  },
+  "evaluated_at": "2026-09-12T19:50:00Z"
+}
